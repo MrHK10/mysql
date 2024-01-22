@@ -1,3 +1,4 @@
+```
 show databases;  
 create database [db_name];  
 use [db_name];  
@@ -18,8 +19,9 @@ insert intor [table_name] values(12,'ankit','kanpur');
      
 alter table [table_name] add col1;    
 update [table_name] set col= value , col = value where col=value;  
-delete from [table_name] where col=value;  
-
+delete from [table_name] where col=value;
+```  
+```
 where:
 Enter password: ****
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -33,9 +35,15 @@ affiliates. Other names may be trademarks of their respective
 owners.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+```
+----
 
+```
 mysql> use learn;
 Database changed
+```
+
+```
 mysql> show tables;
 +-----------------+
 | Tables_in_learn |
@@ -43,7 +51,8 @@ mysql> show tables;
 | student         |
 +-----------------+
 1 row in set (0.00 sec)
-'''
+```
+```
 mysql> select * from student;
 | id       | name    | city    | country |
 |----------|---------|---------|---------|
@@ -55,7 +64,9 @@ mysql> select * from student;
 | 24234236 | ramsigh | lucknow | india   |
 
 6 rows in set (0.00 sec)
+```
 
+```
 mysql> select * from student;
 +----------+---------+---------+---------+
 | id       | name    | city    | country |
@@ -68,7 +79,9 @@ mysql> select * from student;
 | 24234236 | ramsigh | lucknow | india   |
 +----------+---------+---------+---------+
 6 rows in set (0.00 sec)
-
+```
+----
+```
 mysql> select * from student where city='lucknow';
 +----------+---------+---------+---------+
 | id       | name    | city    | country |
@@ -79,7 +92,9 @@ mysql> select * from student where city='lucknow';
 | 24234236 | ramsigh | lucknow | india   |
 +----------+---------+---------+---------+
 4 rows in set (0.00 sec)
-
+```
+----
+```
 mysql> select * from student where country='india';
 +----------+---------+---------+---------+
 | id       | name    | city    | country |
@@ -91,7 +106,9 @@ mysql> select * from student where country='india';
 | 24234236 | ramsigh | lucknow | india   |
 +----------+---------+---------+---------+
 5 rows in set (0.00 sec)
-
+```
+----
+```
 mysql> select * from student where country='india';
 +----------+---------+---------+---------+
 | id       | name    | city    | country |
@@ -103,7 +120,9 @@ mysql> select * from student where country='india';
 | 24234236 | ramsigh | lucknow | india   |
 +----------+---------+---------+---------+
 5 rows in set (0.00 sec)
-
+```
+----
+```
 mysql> select name,city,country from student where country='india';
 +---------+---------+---------+
 | name    | city    | country |
@@ -115,7 +134,9 @@ mysql> select name,city,country from student where country='india';
 | ramsigh | lucknow | india   |
 +---------+---------+---------+
 5 rows in set (0.00 sec)
-
+```
+---
+```
 mysql> select name as  "USERNAME" , city as "CITYNAME" from student ;
 +----------+----------+
 | USERNAME | CITYNAME |
@@ -128,7 +149,9 @@ mysql> select name as  "USERNAME" , city as "CITYNAME" from student ;
 | ramsigh  | lucknow  |
 +----------+----------+
 6 rows in set (0.00 sec)
-
+```
+---
+```
 mysql> select * from student where city='kanpur';
 +------+------+--------+---------+
 | id   | name | city   | country |
@@ -136,7 +159,8 @@ mysql> select * from student where city='kanpur';
 | 2334 | aman | kanpur | india   |
 +------+------+--------+---------+
 1 row in set (0.00 sec)
-
+```
+```
 mysql> select * from student;
 +----------+---------+---------+---------+
 | id       | name    | city    | country |
@@ -672,5 +696,5 @@ mysql> select student.name , laptops.lmodel from student inner join laptops on s
 | sanket | Dell   |
 +--------+--------+
 2 rows in set (0.00 sec)
-
+```
 mysql>
